@@ -58,7 +58,7 @@ function Quiz(props) {
     return (
       <div className='w-2/3 h-full mx-auto mt-20'>
         <div className="w-full h-4 rounded-full bg-gray-700"></div>
-        <div className="bg-gray-300 rounded-lg h-52 sm:h-64 md:h-80 p-4 sm:p-6 md:p-12 mt-2 sm:mt-5">
+        <div className="bg-gray-300 rounded-lg h-56 sm:h-64 md:h-80 p-4 sm:p-6 md:p-12 mt-2 sm:mt-5">
           <div>
             <div className=" mt-4 sm:mt-8 md:mt-12">
               <div className='mx-auto text-center text-2xl sm:text-3xl md:text-4xl font-semibold'>
@@ -86,9 +86,9 @@ function Quiz(props) {
             <div className="w-full h-4 rounded-full bg-gray-700">
               <div className="bg-blue-600 h-4 rounded-full" style={{ width: progress + "%" }}></div>
             </div>
-            <div className="bg-gray-300 rounded-lg h-64 sm:h-96 md:h-80 py-6 px-4 sm:p-12 mt-2 sm:mt-5 flex justify-center items-center">
+            <div className="bg-gray-300 rounded-lg h-72 md:h-80 py-6 px-4 sm:p-12 mt-2 sm:mt-5 flex justify-center items-center">
               <div>
-                <div className="text-medium sm:text-xl md:text-2xl lg:text-4xl mb-7 text-center">
+                <div className="text-base sm:text-xl md:text-2xl lg:text-4xl mb-7 text-center">
                   {aktuelleFrage.Frage}
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4">
@@ -107,9 +107,9 @@ function Quiz(props) {
             <div className="w-full h-4 rounded-full bg-gray-700">
               <div className="bg-blue-600 h-4 rounded-full" style={{ width: progress + "%" }}></div>
             </div>
-            <div className="bg-gray-300 rounded-lg h-64 sm:h-96 md:h-80 py-6 px-4 sm:p-12 mt-2 sm:mt-5 flex justify-center items-center">
+            <div className="bg-gray-300 rounded-lg h-min md:h-80 py-6 px-4 sm:p-12 mt-2 sm:mt-5 flex justify-center items-center">
               <div>
-                <div className="text-md sm:text-xl md:text-2xl lg:text-4xl mb-7 text-center">
+                <div className="text-base sm:text-xl md:text-2xl lg:text-4xl mb-7 text-center">
                   {aktuelleFrage.Frage}
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4">
