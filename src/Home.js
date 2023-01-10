@@ -68,7 +68,7 @@ function Home() {
           <div />
         </div>
       </div>
-      <div className="col graphImg">
+      <div className="col hidden sm:flex graphImg">
         <img src={graph} alt="Bild nicht verfügbar" />
       </div>
     </section>
