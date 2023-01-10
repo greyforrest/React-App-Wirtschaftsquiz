@@ -228,38 +228,11 @@ code {
 
 @media (max-width: 670px) {
   .graphImg {
-    width: 70%;
-    margin-top: -20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (max-width: 597px) {
-  .graphImg {
-    width: 70%;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (max-width: 536px) {
-  .graphImg {
-    width: 70%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
   }
 }
 
 @media (max-width: 496px) {
-  .graphImg {
-    width: 70%;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .title,
   .registerbtn {
