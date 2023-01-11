@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-App-Wirtschaftsquiz/static/css/main.d4dd29f0.css",
-    "main.js": "/React-App-Wirtschaftsquiz/static/js/main.d7e64493.js",
+    "main.css": "/React-App-Wirtschaftsquiz/static/css/main.5980029d.css",
+    "main.js": "/React-App-Wirtschaftsquiz/static/js/main.bdf4f436.js",
     "static/media/LoginRegister.svg": "/React-App-Wirtschaftsquiz/static/media/LoginRegister.d471d2e52ce8af6c0ea35558a3295f7b.svg",
     "static/media/HomeBildRechts.svg": "/React-App-Wirtschaftsquiz/static/media/HomeBildRechts.b9e81f767ff7b8e98f698c95da33032b.svg",
     "static/media/kevin.jpeg": "/React-App-Wirtschaftsquiz/static/media/kevin.ade1a93cda94fd544a04.jpeg",
@@ -11,11 +11,11 @@
     "static/media/HomeHaeckchen.svg": "/React-App-Wirtschaftsquiz/static/media/HomeHaeckchen.6c116ee769c62c46d4798398ee8797b5.svg",
     "index.html": "/React-App-Wirtschaftsquiz/index.html",
     "static/media/HomeSchweiz.svg": "/React-App-Wirtschaftsquiz/static/media/HomeSchweiz.a35549e57af3f442929a7b2037479ccc.svg",
-    "main.d4dd29f0.css.map": "/React-App-Wirtschaftsquiz/static/css/main.d4dd29f0.css.map",
-    "main.d7e64493.js.map": "/React-App-Wirtschaftsquiz/static/js/main.d7e64493.js.map"
+    "main.5980029d.css.map": "/React-App-Wirtschaftsquiz/static/css/main.5980029d.css.map",
+    "main.bdf4f436.js.map": "/React-App-Wirtschaftsquiz/static/js/main.bdf4f436.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4dd29f0.css",
-    "static/js/main.d7e64493.js"
+    "static/css/main.5980029d.css",
+    "static/js/main.bdf4f436.js"
   ]
 }
