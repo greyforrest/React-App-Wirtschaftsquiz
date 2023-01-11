@@ -23,16 +23,16 @@ function Navbar(props) {
         >
           Wirtschaftsquiz
         </button>
-        <p className="h-8 sm:h-auto w-14 sm:w-auto px-3 col-start-3 text-xs sm:text-md md:text-lg lg:text-xl row-start-2 sm:col-auto sm:row-auto text-black userpunkte rounded-full bg-violet-200 p-2">
+        <p className="h-8 sm:h-auto w-14 sm:w-auto px-2 col-start-1 text-xs sm:text-md md:text-lg lg:text-xl row-start-2 sm:col-auto sm:row-auto text-black userpunkte rounded-full bg-violet-200 p-2">
           <span>🏆 </span>
           {props.user.punkte}
         </p>
-        <div className="flex justify-center items-center col-start-4 row-start-2 sm:col-auto sm:row-auto">
-          <p className="text-right text-xs lg:text-lg sm:text-base ml-5 mr-5 italic">{props.user.email}</p>
+        <div className="flex justify-center items-end text-right col-start-5 row-start-2 sm:col-auto sm:row-auto">
+          <p className="text-xs lg:text-lg sm:text-base ml-5 mr-5 italic">{props.user.email}</p>
         </div>
         <button
           onClick={(e) => navLogOut(e)}
-          className="semibold row-start-1 right-3 absolute sm:relative text-xs md:text-lg lg:text-xl sm:col-auto sm:row-auto logbtn h-7 sm:h-auto bg-black w-20 sm:w-auto hover:opacity-80 text-white py-2 px-2 sm:px-4 rounded-full"
+          className="semibold row-start-1 right-10 absolute sm:relative text-xs sm:right-auto md:text-lg lg:text-xl sm:col-auto sm:row-auto logbtn h-7 sm:h-auto bg-black w-20 sm:w-auto hover:opacity-80 text-white py-2 px-2 sm:px-4 rounded-full"
         >
           Ausloggen
         </button>

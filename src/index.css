@@ -237,8 +237,7 @@ code {
 @media (max-width: 434px) {
   .title,
   .logbtn,
-  .registerbtn,
-  .userpunkte {
+  .registerbtn {
     font-size: 12px;
   }
 }
