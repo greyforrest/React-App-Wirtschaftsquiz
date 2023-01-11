@@ -233,7 +233,7 @@ function Login(props) {
       users.every((user) => {
         //will s Passwort ghashed isch wirds mit bcrypt vergliche
         //Quelle: https://www.npmjs.com/package/bcrypt
-        if (user.email === email && bcrypt.compare(passwort, user.passwort)) {
+        if (user.email === email && bcrypt.compareSync(passwort, user.passwort)) {
           userFound = true;
           return false;
         }
@@ -287,7 +287,7 @@ function Login(props) {
   function checkRegisterData(e) {
     e.preventDefault();
     //@ und . vorhande?
-    if (email.indexOf("@") !== -1 && email.indexOf("." !== -1)) {
+    if (email.indexOf("@") !== -1 && email.indexOf(".") !== -1) {
       var emailFound = false;
       getUserData(e);
       //d Liste isch da und ned leer
