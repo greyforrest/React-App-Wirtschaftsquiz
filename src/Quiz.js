@@ -286,7 +286,7 @@ function Quiz(props) {
       Array.from(document.getElementsByTagName("button")).forEach(b => b.setAttribute("disabled", "true"));
     }
     //Nach 2.5 Sekunde chunnt die nöchst Frog
-    setTimeout(updateQuestion, 2500);
+    setTimeout(updateQuestion, 2000);
   }
 
   //Zeigt die nöchst Frog ah
