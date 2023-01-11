@@ -233,8 +233,10 @@ function Quiz(props) {
           updates["users/" + userid + "/punkte/" + (kapitel - 1)] = korrekt;
           //Ebefalls wiederholige wills ned immer bim erste mal goht
           var updated = false;
+          count = 0;
           while (!updated && count < 5) {
             updated = update(ref(getDatabase(app)), updates);
+            count++;
           }
           //Fehler wenns au nach 5 mal ned goht
           if (!updated) {
