@@ -13,6 +13,7 @@ import Kapitelwahl from "./Kapitelwahl.js"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const navbar = ReactDOM.createRoot(document.getElementById("navbar"));
 
+//die eigete Userdate werde lokal gspeicheret demit mer bim reload ned automatisch usgloggt wird
 var loggedInUserEmail = localStorage.getItem("loggedInUserEmail");
 var loggedInUserPass = localStorage.getItem("loggedInUserPass");
 var loggedInUserPunkte = localStorage.getItem("loggedInUserPunkte");
@@ -69,13 +70,14 @@ export const renderHome = () => {
   root.render(<Home />);
 };
 
-//Es werde am Afang immer d Navbar (ohni Nutzer) und d Startsite azeigt
-if(loggedInUserEmail !== null && loggedInUserPass !== null && loggedInUserPunkte !== null){
+//wenn die date lokal gfunde werde könne und ned "null" sind (als string) wird s d kapitelwahl azeigt und mer isch igloggt
+if(loggedInUserEmail !== null && loggedInUserPass !== null && loggedInUserPunkte !== null && loggedInUserEmail !== "null" && loggedInUserPass !== "null" && loggedInUserPunkte !== "null"){
   var user = {email: loggedInUserEmail, passwort: loggedInUserPass, punkte: loggedInUserPunkte};
   renderNavbar(user);
   renderKapitelwahl(user);
-} else {
+} 
+//süsch het me sich zletzt usgloggt oder no gar ke account
+else {
   renderNavbar(null);
   renderHome();
 }
-
