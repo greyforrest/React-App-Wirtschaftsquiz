@@ -192,25 +192,32 @@ function Login(props) {
     //registriere funktioniert nur wenn d email ned leer isch, s passwort ned leer isch und passwort und repeatpasswort glich sind
     //checkRegisterData => siehe Methode witer unde
     if (
-      email.replace(/\s/g, "") !== "" &&
-      passwort.replace(/\s/g, "") !== "" &&
-      passwort === repeatPasswort &&
       checkRegisterData(e)
     ) {
-      //Passwort wird ghashed für id db
-      //Quelle: https://www.npmjs.com/package/bcrypt
-      bcrypt.genSalt(10, function (err, salt) {
-        bcrypt.hash(passwort, salt, function (err, hash) {
-          writeUserData(e, hash);
-        });
-      });
-      //user wird updated demit d navbar email und dpünkt azeige chan
-      //punkte == totale punkte (alle kapitel)
-      //Warum 0? Will er neu registriert isch und no ke pünkt het
-      user = { email: email, passwort: passwort, punkte: 0 };
-      //siehe index.js
-      renderNavbar(user);
-      renderKapitelwahl(user, true);
+      if (email.replace(/\s/g, "") !== "" &&
+        passwort.replace(/\s/g, "") !== "") {
+        if (passwort !== repeatPasswort) {
+          alert("Die Passwörter stimmen nicht überein.")
+        } else {
+          //Passwort wird ghashed für id db
+          //Quelle: https://www.npmjs.com/package/bcrypt
+          bcrypt.genSalt(10, function (err, salt) {
+            bcrypt.hash(passwort, salt, function (err, hash) {
+              writeUserData(e, hash);
+            });
+          });
+          //user wird updated demit d navbar email und dpünkt azeige chan
+          //punkte == totale punkte (alle kapitel)
+          //Warum 0? Will er neu registriert isch und no ke pünkt het
+          user = { email: email, passwort: passwort, punkte: 0 };
+          //siehe index.js
+          renderNavbar(user);
+          renderKapitelwahl(user, true);
+        }
+      } else {
+        alert("Weder das Passwort noch die Email dürfen leer sein oder nur aus Leerzeichen bestehen.")
+      }
+
     }
   }
 
@@ -250,7 +257,7 @@ function Login(props) {
         );
         //d userliste isch ned da, deswege chaner ned igloggt werde (Siehe PROBLEM obe)
       } else {
-        alert("Es ist ein Fehler aufgetreten. Versuche es nochmals.");
+        alert("Ein Bug, den wird noch nicht lösen konnten, ist aufgetreten. Klicke nochmals auf den Knopf, um das Login zu bestätigen oder allenfalls eine richtige Fehlermeldung zu bekommen.");
       }
     }
   }
@@ -296,7 +303,7 @@ function Login(props) {
       }
       //wenn d Liste ned glade wird (Siehe PROBLEM obe)
       if (users === null) {
-        alert("Es ist ein Fehler aufgetreten. Versuche es nochmals.");
+        alert("Ein Bug, den wird noch nicht lösen konnten, ist aufgetreten. Klicke nochmals auf den Knopf, um die Registrierung zu bestätigen oder allenfalls eine richtige Fehlermeldung zu bekommen.");
         return false;
       }
       //wenn dEmail ned dinne isch isch guet
