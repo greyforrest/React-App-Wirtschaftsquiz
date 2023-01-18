@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/React-App-Wirtschaftsquiz/static/css/main.5980029d.css",
-    "main.js": "/React-App-Wirtschaftsquiz/static/js/main.885a4777.js",
-    "static/media/LoginRegister.svg": "/React-App-Wirtschaftsquiz/static/media/LoginRegister.272ba222f2aae355746debee9b6c2770.svg",
-    "static/media/HomeBildRechts.svg": "/React-App-Wirtschaftsquiz/static/media/HomeBildRechts.54266d75c7832c498988817c066d8053.svg",
+    "main.css": "/React-App-Wirtschaftsquiz/static/css/main.1a940324.css",
+    "main.js": "/React-App-Wirtschaftsquiz/static/js/main.c73463af.js",
     "static/media/kevin.jpeg": "/React-App-Wirtschaftsquiz/static/media/kevin.ade1a93cda94fd544a04.jpeg",
+    "static/media/LoginFormImage.png": "/React-App-Wirtschaftsquiz/static/media/LoginFormImage.fdcfb770a02b80bc0fce.png",
+    "static/media/HomeBildRechts.png": "/React-App-Wirtschaftsquiz/static/media/HomeBildRechts.ec3b54327f1300c303e1.png",
     "static/media/melanie.jpeg": "/React-App-Wirtschaftsquiz/static/media/melanie.2c504401f7fdd90395ca.jpeg",
     "static/media/luka.jpeg": "/React-App-Wirtschaftsquiz/static/media/luka.26a683d928ab146ec39d.jpeg",
     "static/media/oltian.jpg": "/React-App-Wirtschaftsquiz/static/media/oltian.1710c3d24d21b9d05fb4.jpg",
-    "static/media/HomeHaeckchen.svg": "/React-App-Wirtschaftsquiz/static/media/HomeHaeckchen.e2fdb7f339571fe3a27c8256ab9ccbad.svg",
     "index.html": "/React-App-Wirtschaftsquiz/index.html",
-    "static/media/HomeSchweiz.svg": "/React-App-Wirtschaftsquiz/static/media/HomeSchweiz.d2b74af462813de44bcba61442eeb66d.svg",
-    "main.5980029d.css.map": "/React-App-Wirtschaftsquiz/static/css/main.5980029d.css.map",
-    "main.885a4777.js.map": "/React-App-Wirtschaftsquiz/static/js/main.885a4777.js.map"
+    "main.1a940324.css.map": "/React-App-Wirtschaftsquiz/static/css/main.1a940324.css.map",
+    "main.c73463af.js.map": "/React-App-Wirtschaftsquiz/static/js/main.c73463af.js.map"
   },
   "entrypoints": [
-    "static/css/main.5980029d.css",
-    "static/js/main.885a4777.js"
+    "static/css/main.1a940324.css",
+    "static/js/main.c73463af.js"
   ]
 }
