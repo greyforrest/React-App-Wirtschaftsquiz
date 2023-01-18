@@ -270,21 +270,21 @@ function Quiz(props) {
       //De aklickti Button wird grüen und es chönd ke witeri Antworte gwählt werde
       clickedButton = document.getElementById(e.target.id);
       clickedButton.classList.add("bg-green-500");
-      clickedButton.classList.remove("bg-blue-500");
-      Array.from(document.getElementsByTagName("button")).forEach(b => b.classList.remove("hover:bg-blue-700"));
+      clickedButton.classList.remove("bg-violet-600");
+      Array.from(document.getElementsByTagName("button")).forEach(b => b.classList.remove("hover:bg-violet-800"));
       Array.from(document.getElementsByTagName("button")).forEach(b => b.setAttribute("disabled", "true"));
     } else {
       //Wenns die falshc Antwort isch
       //Aklickte Button wird rot
       clickedButton = document.getElementById(e.target.id);
       clickedButton.classList.add("bg-red-600");
-      clickedButton.classList.remove("bg-blue-500");
+      clickedButton.classList.remove("bg-violet-600");
       //Die richtig Antwort wird grüen
       correctButton = document.getElementById(aktuelleFrage.Richtig);
       correctButton.classList.add("bg-green-500");
-      correctButton.classList.remove("bg-blue-500");
+      correctButton.classList.remove("bg-violet-600");
       //Es chönne ke witeri Antworte aklickt werde
-      Array.from(document.getElementsByTagName("button")).forEach(b => b.classList.remove("hover:bg-blue-700"));
+      Array.from(document.getElementsByTagName("button")).forEach(b => b.classList.remove("hover:bg-violet-800"));
       Array.from(document.getElementsByTagName("button")).forEach(b => b.setAttribute("disabled", "true"));
     }
     //Nach 2.5 Sekunde chunnt die nöchst Frog
@@ -295,19 +295,19 @@ function Quiz(props) {
   function updateQuestion() {
     setFrage(frage + 1);
     //Buttons chönnd wieder aklickt werde
-    Array.from(document.getElementsByTagName("button")).forEach(b => b.classList.add("hover:bg-blue-700"));
+    Array.from(document.getElementsByTagName("button")).forEach(b => b.classList.add("hover:bg-violet-800"));
     Array.from(document.getElementsByTagName("button")).forEach(b => b.removeAttribute("disabled"));
     //De grüen button (und de rot falls vorhande) werde wieder blaue
     if (correctButton != null) {
       clickedButton.classList.remove("bg-red-600");
-      clickedButton.classList.add("bg-blue-500");
+      clickedButton.classList.add("bg-violet-600");
       correctButton.classList.remove("bg-green-500");
-      correctButton.classList.add("bg-blue-500");
+      correctButton.classList.add("bg-violet-600");
       correctButton = null;
       clickedButton = null;
     } else {
       clickedButton.classList.remove("bg-green-500");
-      clickedButton.classList.add("bg-blue-500");
+      clickedButton.classList.add("bg-violet-600");
       clickedButton = null;
     }
   }
