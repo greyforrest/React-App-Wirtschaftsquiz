@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-App-Wirtschaftsquiz/static/css/main.1a940324.css",
-    "main.js": "/React-App-Wirtschaftsquiz/static/js/main.c73463af.js",
+    "main.css": "/React-App-Wirtschaftsquiz/static/css/main.19030e56.css",
+    "main.js": "/React-App-Wirtschaftsquiz/static/js/main.210cde62.js",
     "static/media/kevin.jpeg": "/React-App-Wirtschaftsquiz/static/media/kevin.ade1a93cda94fd544a04.jpeg",
     "static/media/LoginFormImage.png": "/React-App-Wirtschaftsquiz/static/media/LoginFormImage.fdcfb770a02b80bc0fce.png",
     "static/media/HomeBildRechts.png": "/React-App-Wirtschaftsquiz/static/media/HomeBildRechts.ec3b54327f1300c303e1.png",
@@ -9,11 +9,11 @@
     "static/media/luka.jpeg": "/React-App-Wirtschaftsquiz/static/media/luka.26a683d928ab146ec39d.jpeg",
     "static/media/oltian.jpg": "/React-App-Wirtschaftsquiz/static/media/oltian.1710c3d24d21b9d05fb4.jpg",
     "index.html": "/React-App-Wirtschaftsquiz/index.html",
-    "main.1a940324.css.map": "/React-App-Wirtschaftsquiz/static/css/main.1a940324.css.map",
-    "main.c73463af.js.map": "/React-App-Wirtschaftsquiz/static/js/main.c73463af.js.map"
+    "main.19030e56.css.map": "/React-App-Wirtschaftsquiz/static/css/main.19030e56.css.map",
+    "main.210cde62.js.map": "/React-App-Wirtschaftsquiz/static/js/main.210cde62.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a940324.css",
-    "static/js/main.c73463af.js"
+    "static/css/main.19030e56.css",
+    "static/js/main.210cde62.js"
   ]
 }
