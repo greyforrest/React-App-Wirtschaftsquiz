@@ -65,12 +65,12 @@ function Quiz(props) {
                 Bereit für das Quiz zum Kapitel {kapitel}?
               </div>
               <div className='flex justify-center items-center my-6 sm:my-8'>
-                <button onClick={e => startQuiz(e)} className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg w-100 text-sm sm:text-lg md:text-2xl">Starten</button>
+                <button onClick={e => startQuiz(e)} className="bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-4 rounded-lg w-100 text-sm sm:text-lg md:text-2xl">Starten</button>
               </div>
             </div>
           </div>
         </div>
-        <button onClick={e => back(e)} className="float-right my-4 sm:my-8 md:my-12 text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm sm:text-md md:text-xl">Zurück zur Kapitelwahl</button>
+        <button onClick={e => back(e)} className="float-right my-4 sm:my-8 md:my-12 text-center bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-4 rounded text-sm sm:text-md md:text-xl">Zurück zur Kapitelwahl</button>
       </div>
     );
   } else {
@@ -84,7 +84,7 @@ function Quiz(props) {
         return (
           <div className='w-2/3 h-full mx-auto mt-20'>
             <div className="w-full h-4 rounded-full bg-gray-700">
-              <div className="bg-blue-600 h-4 rounded-full" style={{ width: progress + "%" }}></div>
+              <div className="bg-violet-700 h-4 rounded-full" style={{ width: progress + "%" }}></div>
             </div>
             <div className="bg-gray-300 rounded-lg h-72 md:h-80 py-6 px-4 sm:p-12 mt-2 sm:mt-5 flex justify-center items-center">
               <div>
@@ -92,12 +92,12 @@ function Quiz(props) {
                   {aktuelleFrage.Frage}
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4">
-                  <button id='A' onClick={e => answeredQuestion(e, "A")} className="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.A}</button>
-                  <button id='B' onClick={e => answeredQuestion(e, "B")} className="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.B}</button>
+                  <button id='A' onClick={e => answeredQuestion(e, "A")} className="text-center bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.A}</button>
+                  <button id='B' onClick={e => answeredQuestion(e, "B")} className="text-center bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.B}</button>
                 </div>
               </div>
             </div>
-            <button onClick={e => back(e)} className="float-right my-4 sm:my-8 md:my-12 text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm sm:text-md md:text-xl">Zurück zur Kapitelwahl</button>
+            <button onClick={e => back(e)} className="float-right my-4 sm:my-8 md:my-12 text-center bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-4 rounded text-sm sm:text-md md:text-xl">Zurück zur Kapitelwahl</button>
           </div>
         );
         //... oder 4
@@ -105,7 +105,7 @@ function Quiz(props) {
         return (
           <div className='w-2/3 h-full mx-auto mt-20'>
             <div className="w-full h-4 rounded-full bg-gray-700">
-              <div className="bg-blue-600 h-4 rounded-full" style={{ width: progress + "%" }}></div>
+              <div className="bg-violet-700 h-4 rounded-full" style={{ width: progress + "%" }}></div>
             </div>
             <div className="bg-gray-300 rounded-lg h-min md:h-80 py-6 px-4 sm:p-12 mt-2 sm:mt-5 flex justify-center items-center">
               <div>
@@ -114,17 +114,17 @@ function Quiz(props) {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4">
                   <div className="grid grid-rows-2 gap-2 sm:gap-4">
-                    <button id='A' onClick={e => answeredQuestion(e, "A")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-1 sm:px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.A}</button>
-                    <button id='B' onClick={e => answeredQuestion(e, "B")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-1 sm:px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.B}</button>
+                    <button id='A' onClick={e => answeredQuestion(e, "A")} className="bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-1 sm:px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.A}</button>
+                    <button id='B' onClick={e => answeredQuestion(e, "B")} className="bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-1 sm:px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.B}</button>
                   </div>
                   <div className="grid grid-rows-2 gap-2 sm:gap-4">
-                    <button id='C' onClick={e => answeredQuestion(e, "C")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-1 sm:px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.C}</button>
-                    <button id='D' onClick={e => answeredQuestion(e, "D")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-1 sm:px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.D}</button>
+                    <button id='C' onClick={e => answeredQuestion(e, "C")} className="bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-1 sm:px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.C}</button>
+                    <button id='D' onClick={e => answeredQuestion(e, "D")} className="bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-1 sm:px-4 rounded w-100 text-xs sm:text-base md:text-lg">{aktuelleFrage.D}</button>
                   </div>
                 </div>
               </div>
             </div>
-            <button onClick={e => back(e)} className="float-right my-4 sm:my-8 md:my-12 text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm sm:text-md md:text-xl">Zurück zur Kapitelwahl</button>
+            <button onClick={e => back(e)} className="float-right my-4 sm:my-8 md:my-12 text-center bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-4 rounded text-sm sm:text-md md:text-xl">Zurück zur Kapitelwahl</button>
           </div>
         );
       }
@@ -136,14 +136,14 @@ function Quiz(props) {
       return (
         <div className='w-2/3 h-full mx-auto mt-20'>
           <div className="w-full h-4 rounded-full bg-gray-700">
-            <div className="bg-blue-600 h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: 100 + "%" }}></div>
+            <div className="bg-violet-700 h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: 100 + "%" }}></div>
           </div>
           <div className="bg-gray-300 rounded-lg h-52 sm:h-64 md:h-80 py-6 px-4 sm:px-8 md:px-12 mt-2 sm:mt-5 flex justify-center items-center">
             <div>
               <div className="h-full text-xl md:text-3xl lg:text-4xl font-semibold">
                 Du hast {korrekt} von {frage} Fragen zum Kapitel {kapitel} richtig beantwortet.
               </div>
-              <button onClick={e => back(e)} className="float-right my-4 sm:my-8 md:my-12 text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm sm:text-lg md:text-2xl">Zurück zur Kapitelwahl</button>
+              <button onClick={e => back(e)} className="float-right my-4 sm:my-8 md:my-12 text-center bg-violet-600 hover:bg-violet-800 text-white font-bold py-2 px-4 rounded text-sm sm:text-lg md:text-2xl">Zurück zur Kapitelwahl</button>
             </div>
           </div>
         </div>

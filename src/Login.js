@@ -1,5 +1,5 @@
 import "./index.css";
-import login from "./images/LoginRegister.svg";
+import login from "./images/LoginFormImage.png";
 import React, { useState } from "react";
 //firebase sache
 import { initializeApp } from "firebase/app";

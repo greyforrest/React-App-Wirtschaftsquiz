@@ -1,9 +1,9 @@
 import "./index.css";
 import React from "react";
 import { renderLogin } from "./index.js";
-import CH from "./images/HomeSchweiz.svg";
-import graph from "./images/HomeBildRechts.svg";
-import check from "./images/HomeHaeckchen.svg";
+import CH from "./images/HomeSchweiz.png";
+import graph from "./images/HomeBildRechts.png";
+import check from "./images/HomeHaeckchen.png";
 import melanie from "./images/melanie.jpeg";
 import oltian from "./images/oltian.jpg";
 import luka from "./images/luka.jpeg";
